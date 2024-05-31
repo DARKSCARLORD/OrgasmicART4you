@@ -6,21 +6,21 @@
     <meta name="description" content="Discover and purchase unique artwork from local artists. Support your community and explore diverse art styles.">
     <meta name="keywords" content="local art, buy art, art gallery, community artists, paintings, sculptures">
     <meta name="author" content="Chandler, Elizabeth">
-    
+    <title>Art Gallery</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());('config', 'UA-XXXXXXXXX-X');
+    gtag('js', new Date()); gtag('config', 'UA-XXXXXXXXX-X');
     </script>
     <style>
         .container {
-            border-bottom: 1px solid var(--wp--preset--color--primary);
+            border-bottom: 1px solid #0073aa; 
             padding: 0;
         }
         .columns {
-            padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+            padding: 40px 50px; 
             display: flex;
             align-items: center;
         }
@@ -40,11 +40,21 @@
         }
         .alignfull {
             margin: 0;
-            padding: calc(0.5 * var(--wp--style--root--padding-right));
+            padding: 20px; 
         }
         .alignwide {
             display: flex;
             justify-content: space-between;
+        }
+        .main-content {
+            min-height: 60vh;
+            padding: 0 50px;
+        }
+        .main-content .text-section {
+            flex: 0 0 33.33%;
+        }
+        .main-content .image-section {
+            flex: 0 0 66.7%;
         }
     </style>
 </head>
@@ -53,86 +63,73 @@
         <div class="container">
             <div class="columns">
                 <div class="column-33">
-                    <h1>Site Title</h1>
+                    <h1>Art Gallery</h1>
                 </div>
                 <div class="column-66">
-                    <nav>Navigation</nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="buttons">
                 <div>
-                    <a href="#">Log In</a>
+                    <a href="#login">Log In</a>
                 </div>
                 <div>
-                    <a href="#">Sign Up!</a>
+                    <a href="#signup">Sign Up!</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="slideshow" data-effect="slide">
-            <div class="slideshow_container swiper-container">
-                <ul class="slideshow_wrapper swiper-wrapper">
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4930.jpeg?w=863" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4925.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4945.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3477-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4937-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3418-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/fullsizerender-6-edited.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide swiper-slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3425-1.jpeg?w=1024" alt=""></figure>
-                    </li>
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <ul>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4930.jpeg?w=863" alt="Artwork 1"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4925.jpeg?w=1024" alt="Artwork 2"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935-1.jpeg?w=1024" alt="Artwork 3"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4945.jpeg?w=1024" alt="Artwork 4"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3477-1.jpeg?w=1024" alt="Artwork 5"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4937-1.jpeg?w=1024" alt="Artwork 6"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3418-1.jpeg?w=1024" alt="Artwork 7"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/fullsizerender-6-edited.jpeg?w=1024" alt="Artwork 8"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935.jpeg?w=1024" alt="Artwork 9"></li>
+                    <li><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3425-1.jpeg?w=1024" alt="Artwork 10"></li>
                 </ul>
-                <a class="slideshow_button-prev swiper-button-prev"></a>
-                <a class="slideshow_button-next swiper-button-next"></a>
-                <a class="slideshow_button-pause" aria-label="Pause Slideshow"></a>
-                <div class="slideshow_pagination swiper-pagination"></div>
+                <a href="#" class="prev">&#10094;</a>
+                <a href="#" class="next">&#10095;</a>
             </div>
         </div>
 
-        <h2 class="has-text-align-center"><strong>Explore Local Artistry</strong></h2>
-        <p class="has-text-align-center">Discover and Purchase Unique Artworks Directly from the Artists</p>
+        <h2 class="text-center"><strong>Explore Local Artistry</strong></h2>
+        <p class="text-center">Discover and Purchase Unique Artworks Directly from the Artists</p>
 
         <div class="alignfull">
-            <h2 class="alignwide has-text-align-left"><strong>Join THE Team!</strong></h2>
+            <h2 class="alignwide text-left x-large-font"><strong>Join THE Team!</strong></h2>
             <div class="alignwide">
-                <div>
-                    <a href="#">Register HERE!</a>
-                </div>
+                <a href="#register" class="button">Register HERE!</a>
             </div>
         </div>
 
         <div class="subscriptions">
-            <strong>Stay Updated with Gallery Shows and NEW Arrivals!</strong>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit"><strong>Stay Updated with Gallery Shows and NEW Arrivals!</strong></button>
+            </form>
         </div>
     </main>
 
     <footer>
-        <div>Footer Content</div>
+        <div class="footer-content">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
     </footer>
 
-    <div class="spacer" style="height: var(--wp--preset--spacing--80);" aria-hidden="true"></div>
+    <div class="spacer" style="height: 80px;" aria-hidden="true"></div>
 </body>
 </html>
