@@ -16,15 +16,18 @@
     gtag('js', new Date());('config', 'UA-XXXXXXXXX-X');
     </script>
     <title>Art Gallery</title>
-    <style>
+      <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: white;
+            color: black;
+            font-weight: bold;
         }
         header, footer {
-            background-color: #fff;
-            color: #333;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
         }
@@ -36,20 +39,20 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            text-align: left;
+            text-align: center;
         }
         nav ul li {
             display: inline;
             margin: 0 15px;
         }
         nav ul li a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
         }
         main {
             min-height: 60vh;
-            padding: 0 50px; 
+            padding: 0 50px; /* Example spacing for --wp--preset--spacing--50 */
         }
         .main-content {
             display: flex;
@@ -80,8 +83,19 @@
             flex: 1;
             padding: 0 20px;
         }
+        .footer-section h4, .footer-section p {
+            color: white;
+            font-weight: bold;
+        }
         .footer-section h4 {
             margin-top: 0;
+        }
+        a {
+            color: black;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #555;
         }
     </style>
 </head>
