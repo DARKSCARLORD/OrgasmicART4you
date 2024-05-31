@@ -16,135 +16,104 @@
     gtag('js', new Date());('config', 'UA-XXXXXXXXX-X');
     </script>
     <style>
-        .container {
-            border-bottom: 1px solid var(--wp--preset--color--primary);
-            padding: 0;
-        }
-        .columns {
-            padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
-            display: flex;
-            align-items: center;
-        }
-        .column-33 {
-            flex-basis: 33.33%;
-            text-align: center;
-        }
-        .column-66 {
-            flex-basis: 66.66%;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        .buttons {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 var(--wp--preset--spacing--50);
-        }
-        .alignfull {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: calc(0.5 * var(--wp--style--root--padding-right));
+            padding: 0;
         }
-        .alignwide {
-            display: flex;
-            justify-content: space-between;
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            min-height: 60vh;
+            padding: 0 50px; 
         }
         .main-content {
-            min-height: 60vh;
-            padding: 0 var(--wp--preset--spacing--50);
+            display: flex;
+            flex-wrap: wrap;
         }
-        .main-content .text-section {
+        .text-section {
             flex: 0 0 33.33%;
         }
-        .main-content .image-section {
+        .image-section {
             flex: 0 0 66.7%;
+        }
+        figure {
+            margin: 0 0 20px;
+        }
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="columns">
-                <div class="column-33">
-                    <h1>Site Title</h1>
-                </div>
-                <div class="column-66">
-                    <nav>Navigation</nav>
-                </div>
-            </div>
-            <div class="buttons">
-                <div>
-                    <a href="#">Log In</a>
-                </div>
-                <div>
-                    <a href="#">Sign Up!</a>
-                </div>
-            </div>
+
+<header>
+    <h1>Art Gallery</h1>
+</header>
+
+<main>
+    <div class="main-content">
+        <div class="text-section">
+            <p><strong>ART GALLERY</strong></p>
+            <p>A Curated Selection of Local Art</p>
         </div>
-    </header>
-
-    <main>
-        <div class="slideshow">
-            <div class="slideshow_container">
-                <ul class="slideshow_wrapper">
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4930.jpeg?w=863" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4925.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4945.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3477-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4937-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3418-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/fullsizerender-6-edited.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935.jpeg?w=1024" alt=""></figure>
-                    </li>
-                    <li class="slideshow_slide">
-                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3425-1.jpeg?w=1024" alt=""></figure>
-                    </li>
-                </ul>
-                <a class="slideshow_button-prev"></a>
-                <a class="slideshow_button-next"></a>
-                <a class="slideshow_button-pause" aria-label="Pause Slideshow"></a>
-                <div class="slideshow_pagination"></div>
-            </div>
+        <div class="image-section">
+            <figure>
+                <img src="img-1.jpeg" alt="Mohammed Magdy">
+                <figcaption>Mohammed Magdy</figcaption>
+            </figure>
+            <figure>
+                <img src="img-2.jpeg" alt="Eliza Widget">
+                <figcaption>Eliza Widget</figcaption>
+            </figure>
+            <figure>
+                <img src="img-3.jpeg" alt="Jeff Addy">
+                <figcaption>Jeff Addy</figcaption>
+            </figure>
+            <figure>
+                <img src="img-4.jpeg" alt="Jeff Addy">
+                <figcaption>Jeff Addy</figcaption>
+            </figure>
+            <figure>
+                <img src="img-5.jpeg" alt="Jeff Addy">
+                <figcaption>Jeff Addy</figcaption>
+            </figure>
+            <figure>
+                <img src="img-6.jpeg" alt="Abulia Elena">
+                <figcaption>Abulia Elena</figcaption>
+            </figure>
+            <figure>
+                <img src="img-7.jpeg" alt="Mohammed Magdy">
+                <figcaption>Mohammed Magdy</figcaption>
+            </figure>
+            <figure>
+                <img src="img-8.jpeg" alt="Sharky Nimbs">
+                <figcaption>Sharky Nimbs</figcaption>
+            </figure>
+            <figure>
+                <img src="img-9.jpeg" alt="Dirt Worm">
+                <figcaption>Dirt Worm</figcaption>
+            </figure>
+            <figure>
+                <img src="img-10.jpeg" alt="Dorcy Bevermenn">
+                <figcaption>Dorcy Bevermenn</figcaption>
+            </figure>
+            <figure>
+                <img src="img-11.jpeg" alt="Liz Bollis">
+                <figcaption>Liz Bollis</figcaption>
+            </figure>
         </div>
+    </div>
+</main>
 
-        <h2 class="has-text-align-center"><strong>Explore Local Artistry</strong></h2>
-        <p class="has-text-align-center">Discover and Purchase Unique Artworks Directly from the Artists</p>
+<footer>
+    <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+</footer>
 
-        <div class="alignfull">
-            <h2 class="alignwide has-text-align-left"><strong>Join THE Team!</strong></h2>
-            <div class="alignwide">
-                <div>
-                    <a href="#">Register HERE!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="subscriptions">
-            <strong>Stay Updated with Gallery Shows and NEW Arrivals!</strong>
-        </div>
-    </main>
-
-    <footer>
-        <div>Footer Content</div>
-    </footer>
-
-    <div class="spacer" style="height: var(--wp--preset--spacing--80);" aria-hidden="true"></div>
 </body>
 </html>
