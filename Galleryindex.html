@@ -2,75 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and purchase unique artwork from local artists. Support your community and explore diverse art styles.">
+    <meta name="keywords" content="local art, buy art, art gallery, community artists, paintings, sculptures">
+    <meta name="author" content="Chandler, Elizabeth">
+    
     <title>Art Gallery</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());('config', 'UA-XXXXXXXXX-X');
+    </script>
+    <style>
+        .container {
+            border-bottom: 1px solid var(--wp--preset--color--primary);
+            padding: 0;
+        }
+        .columns {
+            padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+            display: flex;
+            align-items: center;
+        }
+        .column-33 {
+            flex-basis: 33.33%;
+            text-align: center;
+        }
+        .column-66 {
+            flex-basis: 66.66%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 var(--wp--preset--spacing--50);
+        }
+        .alignfull {
+            margin: 0;
+            padding: calc(0.5 * var(--wp--style--root--padding-right));
+        }
+        .alignwide {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content {
+            min-height: 60vh;
+            padding: 0 var(--wp--preset--spacing--50);
+        }
+        .main-content .text-section {
+            flex: 0 0 33.33%;
+        }
+        .main-content .image-section {
+            flex: 0 0 66.7%;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <!-- wp:template-part {"slug":"header","theme":"pub/fewer","tagName":"header"} /-->
-</header>
-
-<main style="min-height:60vh; padding: 0 var(--wp--preset--spacing--50);">
-    <div style="display: flex; flex-wrap: wrap;">
-        <div style="flex: 0 0 33.33%;">
-            <p><strong>ART GALLERY</strong></p>
-            <p>A Curated Selection of Local Art</p>
+    <header>
+        <div class="container">
+            <div class="columns">
+                <div class="column-33">
+                    <h1>Site Title</h1>
+                </div>
+                <div class="column-66">
+                    <nav>Navigation</nav>
+                </div>
+            </div>
+            <div class="buttons">
+                <div>
+                    <a href="#">Log In</a>
+                </div>
+                <div>
+                    <a href="#">Sign Up!</a>
+                </div>
+            </div>
         </div>
-        <div style="flex: 0 0 66.7%;">
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4126.jpg?w=1024" alt="Mohammed Magdy">
-                <figcaption>Mohammed Magdy</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4125.jpg?w=1021" alt="Eliza Widget">
-                <figcaption>Eliza Widget</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4124.jpg?w=1020" alt="Jeff Addy">
-                <figcaption>Jeff Addy</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4122.jpg?w=1024" alt="Jeff Addy">
-                <figcaption>Jeff Addy</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4123.jpg?w=1024" alt="Jeff Addy">
-                <figcaption>Jeff Addy</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4129.jpg?w=1024" alt="Abulia Elena">
-                <figcaption>Abulia Elena</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/ll.jpg?w=689" alt="Mohammed Magdy">
-                <figcaption>Mohammed Magdy</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/untitledl.jpg?w=484" alt="Sharky Nimbs">
-                <figcaption>Sharky Nimbs</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4108-copy.jpg?w=1024" alt="Dirt Worm">
-                <figcaption>Dirt Worm</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4106-2.jpg?w=1010" alt="Dorcy Bevermenn">
-                <figcaption>Dorcy Bevermenn</figcaption>
-            </figure>
-            <figure>
-                <img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4947-1.jpeg?w=1024" alt="Liz Bollis">
-                <figcaption>Liz Bollis</figcaption>
-            </figure>
+    </header>
+
+    <main>
+        <div class="slideshow">
+            <div class="slideshow_container">
+                <ul class="slideshow_wrapper">
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4930.jpeg?w=863" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4925.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935-1.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4945.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3477-1.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4937-1.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3418-1.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/fullsizerender-6-edited.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_4935.jpeg?w=1024" alt=""></figure>
+                    </li>
+                    <li class="slideshow_slide">
+                        <figure><img src="https://orgasmicartforyou.wordpress.com/wp-content/uploads/2024/05/img_3425-1.jpeg?w=1024" alt=""></figure>
+                    </li>
+                </ul>
+                <a class="slideshow_button-prev"></a>
+                <a class="slideshow_button-next"></a>
+                <a class="slideshow_button-pause" aria-label="Pause Slideshow"></a>
+                <div class="slideshow_pagination"></div>
+            </div>
         </div>
-    </div>
-</main>
 
-<footer>
-    <!-- wp:template-part {"slug":"footer","theme":"pub/fewer","tagName":"footer"} /-->
-</footer>
+        <h2 class="has-text-align-center"><strong>Explore Local Artistry</strong></h2>
+        <p class="has-text-align-center">Discover and Purchase Unique Artworks Directly from the Artists</p>
 
+        <div class="alignfull">
+            <h2 class="alignwide has-text-align-left"><strong>Join THE Team!</strong></h2>
+            <div class="alignwide">
+                <div>
+                    <a href="#">Register HERE!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscriptions">
+            <strong>Stay Updated with Gallery Shows and NEW Arrivals!</strong>
+        </div>
+    </main>
+
+    <footer>
+        <div>Footer Content</div>
+    </footer>
+
+    <div class="spacer" style="height: var(--wp--preset--spacing--80);" aria-hidden="true"></div>
 </body>
 </html>
