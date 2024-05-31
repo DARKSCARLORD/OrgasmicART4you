@@ -15,6 +15,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());('config', 'UA-XXXXXXXXX-X');
     </script>
+    <title>Art Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,9 +28,28 @@
             text-align: center;
             padding: 10px 0;
         }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
         main {
             min-height: 60vh;
-            padding: 0 50px; 
+            padding: 0 50px; /* Example spacing for --wp--preset--spacing--50 */
         }
         .main-content {
             display: flex;
@@ -37,16 +57,31 @@
         }
         .text-section {
             flex: 0 0 33.33%;
+            padding: 20px;
         }
         .image-section {
             flex: 0 0 66.7%;
+            padding: 20px;
         }
         figure {
             margin: 0 0 20px;
+            text-align: center;
         }
         figcaption {
-            text-align: center;
             margin-top: 5px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 50px;
+            text-align: left;
+        }
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .footer-section h4 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -56,6 +91,14 @@
     <h1>Art Gallery</h1>
 </header>
 
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#meet-the-artist">Meet the Artist</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#join-our-team">Join our Team</a></li>
+    </ul>
+</nav>
 <main>
     <div class="main-content">
         <div class="text-section">
@@ -112,7 +155,21 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+    <div class="footer-section">
+        <h4>Orgasmic Art</h4>
+        <p>For the People, By the People</p>
+    </div>
+    <div class="footer-section">
+        <h4>Questions?</h4>
+        <p>Cell: 864-847-9487</p>
+        <p>Email: <a href="mailto:orgasmicart4you@gmail.com" style="color: #fff;">orgasmicart4you@gmail.com</a></p>
+        <p>Location: 400 E Randolph St</p>
+    </div>
+    <div class="footer-section">
+        <h4>Hours of Operation:</h4>
+        <p>Weekdays: 8:00AM - 5:00PM</p>
+        <p>Weekends: 7:00AM - 6:00PM</p>
+    </div>
 </footer>
 
 </body>
